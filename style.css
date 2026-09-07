@@ -330,7 +330,21 @@ ul {
 }
 
 .hero-image-wrap {
-  flex: 1.1;
+  position: relative;
+}
+.floating-hero-card {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  box-shadow: 0 12px 32px rgba(11, 87, 208, 0.15);
+}
+@media (max-width: 900px) {
+  .floating-hero-card {
+    position: static;
+    margin: 1.5rem auto 0;
+  }
+}
+
 }
 
 .hero-img {
