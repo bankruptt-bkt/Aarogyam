@@ -9,42 +9,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="portal.css" />
+  
+  <!-- Link to the separate CSS file -->
+  <link rel="stylesheet" href="portal.css">
 </head>
-<body class="portal-body">
+<body>
 
-  <!-- ================= TOP UTILITY NAV ================= -->
+  <!-- Top Navigation -->
   <nav class="portal-nav">
-    <div class="portal-container nav-flex">
-      <a href="../index.html" class="portal-brand">
+    <div class="container nav-inner">
+      <a href="../index.html" class="brand-link">
         <div class="brand-icon"><i class="fa-solid fa-plus"></i></div>
-        <div>
-          <span class="brand-name">Aarogyam</span>
-          <span class="brand-sub">Patient Care Portal</span>
+        <div class="brand-text">
+          <h1>Aarogyam</h1>
+          <span>Patient Care Portal</span>
         </div>
       </a>
-      <a href="../index.html" class="back-link">
-        <i class="fa-solid fa-arrow-left"></i> Back to Aarogyam Home
+      <a href="../index.html" class="back-home">
+        <i class="fa-solid fa-arrow-left"></i> Home
       </a>
     </div>
   </nav>
 
-  <!-- ================= MAIN PORTAL LOGIN CONTAINER ================= -->
-  <main class="portal-main">
-    <div class="portal-auth-card">
-      <div class="card-header">
-        <div class="auth-icon-circle">
+  <!-- Login Area -->
+  <main class="main-wrap">
+    <div class="auth-card">
+      <div class="card-top">
+        <div class="icon-badge">
           <i class="fa-solid fa-heart-pulse"></i>
         </div>
-        <h1 class="portal-title">Access Lab Reports</h1>
-        <p class="portal-desc">Enter your registered mobile number and Lab ID to review and download your test results.</p>
+        <h2>Access Lab Reports</h2>
+        <p>Enter your registered mobile number and Lab ID to review and download your test results.</p>
       </div>
 
-      <!-- Login Form -->
       <form id="portalLoginForm">
         <div class="form-group">
           <label for="mobileNumber">Registered Mobile Number</label>
-          <div class="input-wrap">
+          <div class="input-field">
             <i class="fa-solid fa-phone"></i>
             <input 
               type="tel" 
@@ -59,7 +60,7 @@
 
         <div class="form-group">
           <label for="billId">Bill No. / Lab ID (Optional)</label>
-          <div class="input-wrap">
+          <div class="input-field">
             <i class="fa-solid fa-receipt"></i>
             <input 
               type="text" 
@@ -69,28 +70,28 @@
           </div>
         </div>
 
-        <button type="submit" class="portal-btn">
+        <button type="submit" class="submit-btn">
           Verify & View Reports <i class="fa-solid fa-arrow-right"></i>
         </button>
       </form>
 
-      <!-- Feedback / Demo Notice Area -->
-      <div id="statusMessage" class="status-box hidden"></div>
+      <!-- Dynamic Status Message Box -->
+      <div id="statusMessage" class="status-box"></div>
 
-      <!-- Support Footer -->
-      <div class="card-footer">
-        <div class="support-info">
+      <div class="card-bottom">
+        <div class="help-msg">
           <i class="fa-solid fa-headset"></i>
-          <span>Having trouble finding your reports? Call Helpline: <strong>+91 98765 43210</strong></span>
+          <div>Having trouble finding your reports? Call Helpline: <a href="tel:+919876543210">+91 98765 43210</a></div>
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="portal-mini-footer">
-    <p>© 2025 Aarogyam Multispeciality Diagnostic Centre. Data secured with 256-bit encryption.</p>
+  <footer class="page-footer">
+    <p>© 2026 Aarogyam Multispeciality Diagnostic Centre. Data secured with 256-bit encryption.</p>
   </footer>
 
+  <!-- Link to the separate JS file -->
   <script src="portal.js"></script>
 </body>
 </html>
